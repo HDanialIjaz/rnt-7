@@ -1,7 +1,14 @@
 import React from 'react';
 import { Text, View, Image, StyleSheet,TouchableOpacity } from 'react-native';
+import Button_card from './Button_card.js';
 
 const ProductCard = () => {
+  const buttonData = [
+    { name: 'XS', color: 'black' }, // Button with orange background
+    { name: 'S', color: 'White' }, // Button with green background
+    { name: 'M', color: 'White' }, // Button with blue background
+    { name: 'L', color: '#White' }, // Button with yellow background
+  ];
   return (
     <View style={style.contanair}>
       <View>
@@ -18,6 +25,9 @@ const ProductCard = () => {
           <Text style={style.price}>$110.00</Text>
         </View>
         <Text style={style.stock}>In stock</Text>
+        <View >
+      <Button_card data={buttonData} />
+    </View>
       </View>
     </View>
   );
@@ -34,7 +44,7 @@ const style = StyleSheet.create({
   },
   img: {
     width: '100%',
-    height: 280,
+    height: 320,
     resizeMode: 'cover',
   },
   info_container: {
