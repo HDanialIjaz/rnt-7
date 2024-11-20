@@ -1,13 +1,13 @@
 import React from 'react';
-import { Text, View, Image, StyleSheet,TouchableOpacity } from 'react-native';
+import { Text, View, Image, StyleSheet } from 'react-native';
 import Button_card from './Button_card.js';
 
 const ProductCard = () => {
   const buttonData = [
     { name: 'XS', color: 'black' }, // Button with orange background
-    { name: 'S', color: 'White' }, // Button with green background
-    { name: 'M', color: 'White' }, // Button with blue background
-    { name: 'L', color: '#White' }, // Button with yellow background
+    { name: 'S', color: 'white' }, // Button with green background
+    { name: 'M', color: 'white' }, // Button with blue background
+    { name: 'L', color: 'white' }, // Button with yellow background
   ];
   return (
     <View style={style.contanair}>
@@ -49,20 +49,21 @@ const style = StyleSheet.create({
   },
   info_container: {
     padding: 10,
+    
   },
   one_line:{
     flexDirection:'row',
-    justifyContent:'space-between'
+    justifyContent:'space-between',
   },
   title: {
     fontSize: 18,
     fontWeight: 'bold',
   },
   price: {
-    fontSize: 15,
+    fontSize: 18,
     color: '#555',
     padding: 0,
-    marginTop: 5,
+    marginTop: 0,
   },
   stock: {
     fontSize: 15,
